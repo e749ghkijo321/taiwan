@@ -146,7 +146,32 @@ body {
     z-index: 50;
 }
 
+.smclose {
+    display: none;
+}
 
+.close1 {
+    top: 11px;
+    cursor: pointer;
+    height: 32px;
+    padding: 0;
+    position: absolute;
+    right: -19px;
+    width: 50px;
+    z-index: 50;
+}
+
+.close1 span {
+    background: #ffffff;
+    display: block;
+    height: 4px;
+    position: absolute;
+    -webkit-transition: all 0.15s 0s ease-out;
+    transition: all 0.15s 0s ease-out;
+    width: 20px;
+    border-radius: 20px;
+    z-index: 50;
+}
 
 .arrow-prev {
     cursor: pointer;
@@ -230,7 +255,11 @@ span.right2 {
     top: 17px;
 }
 
-
+span.close2 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 5px;
+}
 
 
 .content li {
@@ -255,15 +284,15 @@ span.right2 {
 }
 
 @media only screen and (max-width: 990px) {
-      .show .content li {
+    .show .content li {
         -webkit-box-flex: 1;
         flex: 1 0 calc(45% - 0px * 2);
     }
 }
 
-    .boxstyle1 {
-        border: unset;
-    }
+.boxstyle1 {
+    border: unset;
+}
 }
 
 .content li:last-child:after {
@@ -301,6 +330,7 @@ span.right2 {
         overflow: hidden;
 
     }
+
 }
 
 @media (max-width: 576px) {
@@ -311,12 +341,19 @@ span.right2 {
     }
 
     .contentitem img {
-        height: 100%;
+        height: unset;
     }
 
-.content{
-      height: 100% !important;
-}
+    .content {
+        height: 100% !important;
+    }
+
+    .show .hs__arrows {
+        display: none;
+    }
+    .smclose {
+        display: block;
+    }
 
 }
 
@@ -324,9 +361,6 @@ span.right2 {
 
 
 @media (hover: none) and (pointer: coarse) {
-    .show .hs__arrows {
-        display: none;
-    }
 
     .show .content li {
         -webkit-box-flex: 1;
@@ -337,7 +371,15 @@ span.right2 {
 @media only screen and (hover: none) and (pointer: coarse) and (max-width: 990px) {
     .show .content li {
         -webkit-box-flex: 1;
-        flex: 1 0 calc(70% - 0px * 2);
+        flex: 1 0 calc(45%);
+    }
+
+    .contentimg {
+        width: 65vw;
+    }
+
+    .box {
+        padding: 0 5px !important;
     }
 }
 
