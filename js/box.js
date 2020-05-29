@@ -3,6 +3,7 @@
 
      var pic1 = $(instanc[key]).find("#firstpic"),
          pic2 = $(instanc[key]).find("#firstpic1"),
+         pic3 = $(instanc[key]).find("#close"),
          show = $(instanc[key]).find("#show"),
          boxx = $(instanc[key]);
 
@@ -24,7 +25,13 @@
 
      });
 
+     $(pic3).on('click', function() {
 
+         boxx.addClass("col-md-3 col-sm-4 col-6 my-3");
+         show.addClass("d-none");
+         pic1.removeClass("d-none");
+
+     });
 
 
  });
