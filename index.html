@@ -8,11 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Hello, TAIWAN!</title>
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df16038024.js" crossorigin="anonymous"></script>
     <script>
-    $(window).resize(function() {
+        $(window).resize(function() {
         $(".content").height($("#firstpic1").width());
 
     });
@@ -25,24 +27,21 @@
 </head>
 
 <body>
-    <!--     <nav class="site-header sticky-top py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2" href="#" aria-label="Product">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false">
-                    <title>Product</title>
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-                </svg>
-            </a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-        </div>
-    </nav> -->
+    <button id="clear" class="fixed-bottom white"><i class="fas fa-th"></i></button>
+    <nav class="menu fixed-open fixed-bottom">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+        </label>
+        <a href="#list1" class="menu-item blue"> <i class="fas fa-utensils"></i> </a>
+        <a href="#list2" class="menu-item green"> <i class="fas fa-street-view"></i></a>
+        <a href="#list3" class="menu-item red"> <i class="fas fa-exclamation"></i> </a>
+        <a href="#list4" class="menu-item purple"> <i class="fas fa-bus"></i></a>
+        <a href="#list5" class="menu-item orange"> <i class="fas fa-globe-asia"></i> </a>
+        <a href="#list6" class="menu-item lightblue"> <i class="fas fa-vihara"></i> </a>
+    </nav>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bgcolor">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Punny headline</h1>
@@ -55,7 +54,7 @@
     <section class="container-lg">
         <div class="position-relative overflow-hidden p-3 text-center bgcolor">
             <div class="row">
-                <div class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                <div id="list1" class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
                     <img id="firstpic" class="w-100" src="pic/1.png">
                     <div id="show" class="show row d-none">
                         <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/1.png"></div>
@@ -67,7 +66,9 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -89,7 +90,9 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -111,7 +114,33 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"><span class="itemtitle"> 3. Amazing title with line clamp if too long</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="list2" class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                    <img id="firstpic" class="w-100" src="pic/2.png">
+                    <div id="show" class="show row d-none">
+                        <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/2.png"></div>
+                        <div class="hs__arrows">
+                            <a id="ff" class="arrow arrow-prev"><span class="left1"></span><span class="left2"></span></a>
+                            <a class="arrow arrow-next"><span class="right1"></span><span class="right2"></span></a>
+                        </div>
+                        <div class="smclose">
+                            <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
+                        </div>
+                        <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/2.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -133,7 +162,9 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -155,7 +186,9 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -177,7 +210,33 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"><span class="itemtitle"> 3. Amazing title with line clamp if too long</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="list3" class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                    <img id="firstpic" class="w-100" src="pic/3.png">
+                    <div id="show" class="show row d-none">
+                        <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/3.png"></div>
+                        <div class="hs__arrows">
+                            <a id="ff" class="arrow arrow-prev"><span class="left1"></span><span class="left2"></span></a>
+                            <a class="arrow arrow-next"><span class="right1"></span><span class="right2"></span></a>
+                        </div>
+                        <div class="smclose">
+                            <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
+                        </div>
+                        <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/3.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -199,7 +258,9 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -221,7 +282,33 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"><span class="itemtitle"> 3. Amazing title with line clamp if too long</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="list4" class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                    <img id="firstpic" class="w-100" src="pic/4.png">
+                    <div id="show" class="show row d-none">
+                        <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/4.png"></div>
+                        <div class="hs__arrows">
+                            <a id="ff" class="arrow arrow-prev"><span class="left1"></span><span class="left2"></span></a>
+                            <a class="arrow arrow-next"><span class="right1"></span><span class="right2"></span></a>
+                        </div>
+                        <div class="smclose">
+                            <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
+                        </div>
+                        <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/4.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -243,7 +330,9 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -265,7 +354,9 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -287,7 +378,33 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"><span class="itemtitle"> 3. Amazing title with line clamp if too long</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="list5" class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                    <img id="firstpic" class="w-100" src="pic/5.png">
+                    <div id="show" class="show row d-none">
+                        <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/5.png"></div>
+                        <div class="hs__arrows">
+                            <a id="ff" class="arrow arrow-prev"><span class="left1"></span><span class="left2"></span></a>
+                            <a class="arrow arrow-next"><span class="right1"></span><span class="right2"></span></a>
+                        </div>
+                        <div class="smclose">
+                            <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
+                        </div>
+                        <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/5.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -309,7 +426,81 @@
                             <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
                         </div>
                         <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
-                            <li id="firstpic2" class="d-block d-sm-none"><div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div></li>
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"><span class="itemtitle"> 3. Amazing title with line clamp if too long</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                    <img id="firstpic" class="w-100" src="pic/1.png">
+                    <div id="show" class="show row d-none">
+                        <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/1.png"></div>
+                        <div class="hs__arrows">
+                            <a id="ff" class="arrow arrow-prev"><span class="left1"></span><span class="left2"></span></a>
+                            <a class="arrow arrow-next"><span class="right1"></span><span class="right2"></span></a>
+                        </div>
+                        <div class="smclose">
+                            <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
+                        </div>
+                        <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/1.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"><span class="itemtitle"> 3. Amazing title with line clamp if too long</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="list6" class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                    <img id="firstpic" class="w-100" src="pic/6.png">
+                    <div id="show" class="show row d-none">
+                        <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/6.png"></div>
+                        <div class="hs__arrows">
+                            <a id="ff" class="arrow arrow-prev"><span class="left1"></span><span class="left2"></span></a>
+                            <a class="arrow arrow-next"><span class="right1"></span><span class="right2"></span></a>
+                        </div>
+                        <div class="smclose">
+                            <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
+                        </div>
+                        <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/6.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"></div>
+                            </li>
+                            <li>
+                                <div class="contentitem"><img src="pic/content.png"><span class="itemtitle"> 3. Amazing title with line clamp if too long</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="list6" class="box overflow-hidden col-md-3 col-sm-4 col-6 my-3">
+                    <img id="firstpic" class="w-100" src="pic/6.png">
+                    <div id="show" class="show row d-none">
+                        <div class="boxin col-md-3 col-sm-4 d-none d-sm-flex my-3"><img id="firstpic1" class="w-100" src="pic/6.png"></div>
+                        <div class="hs__arrows">
+                            <a id="ff" class="arrow arrow-prev"><span class="left1"></span><span class="left2"></span></a>
+                            <a class="arrow arrow-next"><span class="right1"></span><span class="right2"></span></a>
+                        </div>
+                        <div class="smclose">
+                            <a id="close" class="close1"><span class="left1"></span><span class="close2"></span></a>
+                        </div>
+                        <ul class="col-md-9 col-sm-8 d-12 my-3 content boxstyle1">
+                            <li id="firstpic2" class="d-block d-sm-none">
+                                <div class="contentitem contentimg"><img class="w-100" src="pic/6.png"></div>
+                            </li>
                             <li>
                                 <div class="contentitem"><img src="pic/content.png"></div>
                             </li>
@@ -374,6 +565,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
     <script src="js/box.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
