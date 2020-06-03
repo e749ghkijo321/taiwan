@@ -10,7 +10,7 @@
 
 
 body {
-    background-color: #181821;
+    background-color: #CEC542;
 
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .bgcolor {
-    background-color: #32323E;
+    background-color: #CEC542;
 }
 
 .show {
@@ -116,23 +116,99 @@ body {
 }
 
 .boxstyle1 {
-    background: #52b4a1;
+    background: #95364b;
 }
 
 .boxstyle2 {
-    background: #e2e2e2;
+    background: #a75a4d;
 }
 
 .boxstyle3 {
-    background: #48a1b5;
+    background: #b7784f;
 }
 
 .boxstyle4 {
-    background: #def0f4;
+    background: #daa377;
 }
 
 .boxstyle5 {
-    background: #1e5669;
+    background: #8c583b;
+}
+
+.boxstyle6 {
+    background: #a8682e;
+}
+
+.boxstyle7 {
+    background: #c8762c;
+}
+
+.boxstyle8 {
+    background: #d88a4a;
+}
+
+.boxstyle9 {
+    background: #2c5d72;
+}
+
+.boxstyle10 {
+    background: #3b88ad;
+}
+
+.boxstyle11 {
+    background: #6ab0cc;
+}
+
+.boxstyle12 {
+    background: #565631;
+}
+
+.boxstyle13 {
+    background: #5b612d;
+}
+
+.boxstyle14 {
+    background: #506c41;
+}
+
+.boxstyle15 {
+    background: #789d40;
+}
+
+.boxstyle16 {
+    background: #8cae4c;
+}
+
+.boxstyle17 {
+    background: #584486;
+}
+
+.boxstyle18 {
+    background: #6d6194;
+}
+
+.boxstyle19 {
+    background: #978cbb;
+}
+
+.boxstyle20 {
+    background: #26453d;
+}
+
+.boxstyle21 {
+    background: #045f47;
+}
+
+.boxstyle22 {
+    background: #0d8469;
+}
+
+.boxstyle23 {
+    background: #1aa28a;
+}
+
+.boxstyle24 {
+    background: #5dbeab;
 }
 
 .content li::before {
