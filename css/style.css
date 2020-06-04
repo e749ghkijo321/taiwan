@@ -814,6 +814,10 @@ button:focus {
 }
 
 @media (max-width: 576px) {
+  .mainbox {
+  border: none;
+    margin: 0;}
+
     .carouseltext {
         padding: 7px;
         border-radius: 5px;
