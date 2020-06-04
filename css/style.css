@@ -10,7 +10,9 @@
 
 
 body {
-    background-color: #CEC542;
+    background-color: #98922c;
+    background-image: linear-gradient(0deg, #98922c 25%, #f1e869 100%);
+    ;
 
 }
 
@@ -35,6 +37,46 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
+.carousel::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 50;
+}
+
+
+
+.carouseltext {
+    padding: 7px;
+    top: 69%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 2px #ffffff6b;
+    width: 60%;
+    position: absolute;
+    background-color: #cec542d6;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: #5f340f 2px 3px 4px;
+    text-align: center;
+    left: 20%;
+    letter-spacing: 5px;
+}
+
+.carouseltext p {
+    color: #262323;
+    text-shadow: 1px 1px 3px #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+
+
+
 
 
 .product-device {
@@ -82,14 +124,52 @@ body {
 }
 
 
+.little {
+    position: absolute;
+    opacity: 0.97;
+    z-index: 30;
+}
+
+.f1 {
+    top: 50%;
+    right: 5px;
+}
+
+.f2 {
+    top: 1000px;
+    left: 5px;
+}
+
+.f3 {
+    top: 1800px;
+    right: 10px;
+}
+
+.f4 {
+    top: 1850px;
+    right: -25px;
+    transform: rotate(0.5turn) scale(0.5, 0.5);
+}
+
+
 
 .container-lg {
     padding: 0;
 }
 
-.bgcolor {
-    background-color: #CEC542;
+.mainbox {
+    z-index: 40;
+    border-radius: 10px;
+    border: 8px #d1c746 ridge;
+    border-style: outset;
+    border-top: none;
+    margin: 0 -10px;
+    text-align: center;
+    background-color: #ddd55b;
+    overflow: hidden;
+    position: relative;
 }
+
 
 .show {
     width: 100%;
@@ -734,6 +814,22 @@ button:focus {
 }
 
 @media (max-width: 576px) {
+    .carouseltext {
+        padding: 7px;
+        border-radius: 5px;
+        width: 100%;
+        left: 0;
+        top: 35%;
+    }
+
+    .carouseltext h1 {
+        font-size: 2rem;
+    }
+
+    .carouseltext p {
+        font-size: 1rem;
+    }
+
     .show {
         width: unset;
         max-width: unset;
