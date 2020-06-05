@@ -291,6 +291,45 @@ body {
     background: #5dbeab;
 }
 
+
+.conta {
+    position: absolute;
+    color: #ffffffe8;
+    z-index: 80;
+    font-weight: bold;
+    padding: 15px;
+    text-shadow: #7b776dd6 3px 2px 3px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: #ddd55b94 9px;
+    border-style: outset;
+    background-color: #ddd55bcc;
+        bottom: 29px;
+
+}
+
+.a2_1{
+    right: 730px;
+    width: 150px;
+}
+
+.a2_2 {
+    right: 30px;
+    padding: 5px;
+    width: 100px;
+}
+
+.conta:hover {
+    text-decoration: none;
+    color: #ffef00;
+    text-shadow: #7b776dd6 3px 2px 3px;
+    border: #fff0058a 9px;
+    background-color: #a0a0a0ad;
+    border-style: groove;
+
+}
+
+
 .content li::before {
     position: absolute;
     top: 10%;
@@ -814,9 +853,10 @@ button:focus {
 }
 
 @media (max-width: 576px) {
-  .mainbox {
-  border: none;
-    margin: 0;}
+    .mainbox {
+        border: none;
+        margin: 0;
+    }
 
     .carouseltext {
         padding: 7px;
