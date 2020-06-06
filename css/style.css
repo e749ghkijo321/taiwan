@@ -319,6 +319,20 @@ body {
     width: 100px;
 }
 
+.a7_1 {
+    right: 60px;
+    padding: 5px;
+    bottom: 120px;
+    width: 150px;
+}
+
+.a7_2 {
+    right: 60px;
+    padding: 5px;
+    width: 150px;
+}
+
+
 .conta:hover {
     text-decoration: none;
     color: #ffef00;
