@@ -304,11 +304,11 @@ body {
     border: #ddd55b94 9px;
     border-style: outset;
     background-color: #ddd55bcc;
-        bottom: 29px;
-
+    bottom: 29px;
+    text-transform: uppercase;
 }
 
-.a2_1{
+.a2_1 {
     right: 730px;
     width: 150px;
 }
@@ -330,6 +330,25 @@ body {
     right: 60px;
     padding: 5px;
     width: 150px;
+}
+
+
+.a8_1 {
+    bottom: 60px;
+    right: 760px;
+    width: 150px;
+}
+
+.a8_2 {
+    right: 280px;
+    padding: 5px;
+    width: 300px;
+}
+
+.a19_1 {
+    bottom: 20px;
+    right: 1030px;
+    width: 200px;
 }
 
 
