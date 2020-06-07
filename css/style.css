@@ -351,7 +351,11 @@ body {
     width: 200px;
 }
 
-
+.a17_2 {
+    right: 40px;
+    padding: 5px;
+    width: 170px;
+}
 .conta:hover {
     text-decoration: none;
     color: #ffef00;
