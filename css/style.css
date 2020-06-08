@@ -17,6 +17,7 @@ body {
 }
 
 
+
 .container {
     max-width: 960px;
 }
@@ -967,13 +968,13 @@ button:focus {
 }
 
 .lightblue {
-    background-color: #62C2E4;
+    background-color: #1a9ea2;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .lightblue:hover {
-    color: #62C2E4;
+    color: #1a9ea2;
     text-shadow: none;
 }
 
@@ -1007,11 +1008,14 @@ button:focus {
     .footerright {
         text-align: center;
     }
-.footerright span {
-    font-weight: 400;
-    font-size: 0.5rem;
-}
-    .footerright p ,.footerright p.title {
+
+    .footerright span {
+        font-weight: 400;
+        font-size: 0.5rem;
+    }
+
+    .footerright p,
+    .footerright p.title {
         margin: 0 auto;
     }
 
