@@ -319,6 +319,13 @@ body {
     width: 100px;
 }
 
+
+.a6_1 {
+    right: 1010px;
+    padding: 5px;
+    width: 147px;
+}
+
 .a7_1 {
     right: 60px;
     padding: 5px;
@@ -345,6 +352,13 @@ body {
     width: 300px;
 }
 
+.a9_1 {
+    right: 1050px;
+    padding: 5px;
+    width: 150px;
+}
+
+
 .a19_1 {
     bottom: 20px;
     right: 1030px;
@@ -356,6 +370,41 @@ body {
     padding: 5px;
     width: 170px;
 }
+
+.a22_1 {
+    right: 2000px;
+    padding: 5px;
+    width: 150px;
+}
+
+
+.a22_2 {
+    right: 650px;
+    padding: 5px;
+    width: 147px;
+}
+
+.a22_3 {
+    right: 60px;
+    padding: 5px;
+    bottom: 154px;
+    width: 150px;
+}
+
+.a22_4 {
+    right: 35px;
+    padding: 5px;
+    width: 150px;
+    bottom: 20px;
+}
+
+.a23_1 {
+    right: 1680px;
+    padding: 5px;
+    bottom: 150px;
+    width: 150px;
+}
+
 .conta:hover {
     text-decoration: none;
     color: #ffef00;
@@ -365,6 +414,7 @@ body {
     border-style: groove;
 
 }
+
 
 
 .content li::before {
@@ -449,7 +499,70 @@ body {
 
 }
 
+.footerleft {
+    margin: 5px 0;
+    display: table;
+    text-align: center;
+}
 
+.footerright {
+    text-align: left;
+    margin: 5px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-shadow: 2px 2px 3px #2e310d;
+}
+
+.footerright p {
+    font-weight: 500;
+    padding: 5px;
+    width: 80%;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+.footerright p.title {
+
+    color: #ffb974;
+    border-bottom: #ffffff59 0.5px solid;
+    font-weight: 500;
+    padding: 0 5px;
+    width: 80%;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.footerright span {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footera {
+    width: 80%;
+    margin: 5px auto;
+    display: table-caption;
+    color: #ffffffe8;
+    font-weight: bold;
+    padding: 7px;
+    text-shadow: #7e7764d6 3px 2px 3px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: #fff46b94 5px;
+    border-style: outset;
+    background-color: #cbc450;
+    text-transform: uppercase;
+}
+
+.footera:hover {
+    text-decoration: none;
+    color: #6f0202;
+    text-shadow: #7f6363d6 3px 2px 3px;
+    border: #dc5e008a 5px;
+    background-color: #ffffffad;
+    border-style: groove;
+}
 
 .arrow span {
     background: #ffffff;
@@ -890,6 +1003,18 @@ button:focus {
 }
 
 @media (max-width: 576px) {
+
+    .footerright {
+        text-align: center;
+    }
+.footerright span {
+    font-weight: 400;
+    font-size: 0.5rem;
+}
+    .footerright p ,.footerright p.title {
+        margin: 0 auto;
+    }
+
     .mainbox {
         border: none;
         margin: 0;
