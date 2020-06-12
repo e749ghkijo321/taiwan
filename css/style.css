@@ -1003,6 +1003,15 @@ button:focus {
 
 }
 
+@media (max-width: 760px) {
+
+.carouseltext {
+    z-index: 45;
+    top: 62%;
+    width: 70%;
+    left: 15%;}
+    }
+
 @media (max-width: 576px) {
 
     .footerright {
