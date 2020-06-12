@@ -1003,7 +1003,7 @@ button:focus {
 
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 
 .carouseltext {
     z-index: 45;
